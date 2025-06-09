@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Nixonex E-Commerce Test Suite">
+<listeners>
+    <listener class-name="listeners.ExtentReportListener"/>
+</listeners>
+
+    <test name="Home Page Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.HomePageTest"/>
+        </classes>
+        </test>
+
+    <test name="Sign Up Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.SignUpTest"/>
+        </classes>
+        </test>
+
+    
+    <test name="Login Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+        </test>
+        <test name="Cart Verification Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="tests.CartVerificationTest"/>
+    </classes>
+</test>
+<test name="Checkout Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="tests.CheckoutTest"/>
+    </classes>
+</test>
+
+        
+        
+        
+    
+</suite>
